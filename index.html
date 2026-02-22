@@ -79,6 +79,9 @@
         .service-card {
             @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl;
         }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased">
@@ -432,7 +435,12 @@
                     </p>
                 </div>
                 
-                <!--<form class="space-y-8 bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg" id="contactForm">
+                <form class="space-y-8 bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg" name="contacto" method="POST" netlify netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contacto" />
+                    <p class="hidden">
+                        <label>No llenes esto si eres humano: <input name="bot-field" /></label>
+                    </p>
+                    
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="flex flex-col gap-2">
                             <label for="nombre" class="text-sm font-bold text-slate-700 dark:text-slate-300">
@@ -532,7 +540,7 @@
                             <span class="material-symbols-outlined">send</span>
                         </span>
                     </button>
-                </form>-->
+                </form>
                 
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
