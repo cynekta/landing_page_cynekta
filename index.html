@@ -3,87 +3,46 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <!-- TÍTULO PRINCIPAL -->
-    <title>CYNEKTA | Desarrollo Web, Intranet, Consultoría IT y Soporte Técnico</title>
-    
-    <!-- META DESCRIPTION -->
-    <meta name="description" content="Expertos en desarrollo web empresarial, intranet corporativa, consultoría tecnológica y soporte informático. Servicios de mantenimiento IT, cloud computing y transformación digital para empresas.">
-    
-    <!-- KEYWORDS -->
-    <meta name="keywords" content="desarrollo web empresarial, intranet corporativa, arquitectura de sistemas, consultoría informática, soporte técnico informático, mantenimiento de sistemas, servicios it para empresas, consultoría tecnológica, outsourcing informático, mantenimiento informático empresas, soporte it profesional, cloud computing, transformación digital, gestión de infraestructura ti, seguridad informática empresarial, backup y recuperación, monitorización 24x7, copias de seguridad automatizadas, actualización de software, gestión de antivirus, análisis de vulnerabilidades, continuidad de negocio">
-    
-    <!-- META AUTOR Y ROBOTS -->
+    <title>CYNEKTA | Desarrollo Web, Intranets, Hosting y Correo para Empresas</title>
+    <meta name="description" content="Somos un equipo de expertos en soluciones digitales. Creamos páginas web, intranets, hosting seguro, correo corporativo y damos soporte técnico. Trabajamos con empresas en toda Latinoamérica.">
+    <meta name="keywords" content="desarrollo web, páginas web para empresas, intranet corporativa, hosting seguro, correo empresarial, soporte técnico, soluciones digitales, agencia digital latinoamérica">
     <meta name="author" content="CYNEKTA Soluciones Tecnológicas">
     <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="language" content="Spanish">
-    
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="CYNEKTA - Desarrollo Web, Intranet y Consultoría IT">
-    <meta property="og:description" content="Expertos en ingeniería de sistemas, consultoría tecnológica y soporte técnico profesional. Construimos y mantenemos infraestructuras digitales robustas.">
+    <meta property="og:title" content="CYNEKTA | Desarrollo Web, Intranets, Hosting y Correo para Empresas">
+    <meta property="og:description" content="Equipo profesional de soluciones digitales. Páginas web, intranets, hosting blindado, correo profesional y soporte técnico. Atención personalizada en español.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cynekta.com/img/og-image.jpg">
     <meta property="og:url" content="https://cynekta.com">
-    <meta property="og:site_name" content="CYNEKTA Soluciones Tecnológicas">
-    <meta property="og:locale" content="es_ES">
-    
-    <!-- CANONICAL URL -->
     <link rel="canonical" href="https://cynekta.com">
     
-    <!-- FAVICONS -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/img/logo_cynekta.webp">
     
-    <!-- RECURSOS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
-    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     
-    <!-- CONFIGURACIÓN TAILWIND -->
-    <script id="tailwind-config">
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#2563eb",
                         "cynekta-blue": "#3b82f6",
                         "cynekta-dark": "#1e40af",
-                        "background-light": "#f8fafc",
-                        "background-dark": "#0f172a",
                     },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
-                    animation: {
-                        'gradient': 'gradient 3s ease infinite',
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    },
-                    backgroundImage: {
-                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                    }
+                    fontFamily: { "display": ["Inter", "sans-serif"] },
+                    animation: { 'gradient': 'gradient 3s ease infinite' },
                 },
             },
         }
     </script>
     
-    <!-- ESTILOS PERSONALIZADOS -->
     <style>
-        body { 
-            font-family: 'Inter', sans-serif; 
-            scroll-behavior: smooth;
-        }
-        .material-symbols-outlined { font-size: 24px; }
-        @keyframes gradient {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .gradient-text {
             background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
             background-size: 200% auto;
@@ -92,80 +51,43 @@
             background-clip: text;
             animation: gradient 3s ease infinite;
         }
-        img { 
-            max-width: 100%; 
-            height: auto;
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
-        .focus-ring {
-            @apply focus:outline-none focus:ring-2 focus:ring-cynekta-blue focus:ring-offset-2;
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); }
+        .focus-ring:focus { outline: 2px solid #3b82f6; outline-offset: 2px; }
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.2); }
+        .whatsapp-bubble {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
         }
-        .service-card {
-            @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl;
+        .whatsapp-bubble:hover {
+            transform: scale(1.1);
         }
-        .input-error {
-            @apply border-red-500 focus:border-red-500 focus:ring-red-500;
-        }
-        .error-message {
-            @apply text-red-500 text-sm mt-1 flex items-center gap-1;
-        }
-        
-        /* Estilos SweetAlert2 - Tema CYNEKTA */
-        .swal2-popup {
-            font-family: 'Inter', sans-serif !important;
-            border-radius: 1rem !important;
-            padding: 2rem !important;
-        }
-        .dark .swal2-popup {
-            background: #1e293b !important;
-            color: #f1f5f9 !important;
-        }
-        .swal2-title {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 900 !important;
-            color: #0f172a !important;
-        }
-        .dark .swal2-title {
-            color: white !important;
-        }
-        .swal2-html-container {
-            font-family: 'Inter', sans-serif !important;
-            color: #475569 !important;
-        }
-        .dark .swal2-html-container {
-            color: #cbd5e1 !important;
-        }
-        .swal2-confirm {
-            background: linear-gradient(135deg, #3b82f6, #1e40af) !important;
-            color: white !important;
-            border-radius: 0.5rem !important;
-            padding: 0.75rem 2rem !important;
-            font-weight: 700 !important;
-            border: none !important;
-        }
-        .swal2-cancel {
-            background: white !important;
-            color: #1e293b !important;
-            border: 1px solid #cbd5e1 !important;
-            border-radius: 0.5rem !important;
-            padding: 0.75rem 2rem !important;
-            font-weight: 600 !important;
-        }
-        .dark .swal2-cancel {
-            background: #1e293b !important;
-            color: #f1f5f9 !important;
-            border-color: #475569 !important;
-        }
-        .swal2-timer-progress-bar {
-            background: linear-gradient(90deg, #3b82f6, #1e40af) !important;
+        .whatsapp-bubble i {
+            font-size: 32px;
+            color: white;
         }
     </style>
-    
-    <!-- Schema.org para la organización -->
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "@id": "https://cynekta.com",
+        "@id": "https://cynekta.com/#organization",
         "name": "CYNEKTA Soluciones Tecnológicas",
         "url": "https://cynekta.com",
         "logo": "https://cynekta.com/img/logo_cynekta.webp",
@@ -173,870 +95,511 @@
         "description": "Expertos en desarrollo web empresarial, intranet corporativa, consultoría IT y soporte técnico informático.",
         "email": "cynekta@gmail.com",
         "telephone": "+51-992-719-812",
-        "priceRange": "$$",
-        "openingHours": "Mo-Fr 08:00-18:00",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "PE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "telephone": "+51-992-719-812",
+            "email": "cynekta@gmail.com",
+            "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+            "https://wa.me/51992719812"
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Servicios Tecnológicos",
             "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Desarrollo Web Empresarial"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Intranet Corporativa"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Arquitectura de Sistemas"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Consultoría Tecnológica"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Soporte Técnico Informático"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Mantenimiento de Sistemas IT"
-                    }
-                }
-            ]
-        }
-    }
-    </script>
-    
-    <!-- Schema.org para la página -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "CYNEKTA - Desarrollo Web, Intranet, Consultoría IT y Soporte Técnico",
-        "description": "Expertos en desarrollo web empresarial, intranet corporativa, consultoría tecnológica y soporte informático profesional.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "CYNEKTA Soluciones Tecnológicas"
-        },
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Inicio",
-                    "item": "https://cynekta.com"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Desarrollo Web Empresarial",
-                    "item": "https://cynekta.com#servicios"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Intranet Corporativa",
-                    "item": "https://cynekta.com#servicios"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Arquitectura de Sistemas",
-                    "item": "https://cynekta.com#servicios"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 5,
-                    "name": "Consultoría IT",
-                    "item": "https://cynekta.com#servicios"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 6,
-                    "name": "Soporte Técnico",
-                    "item": "https://cynekta.com#servicios"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 7,
-                    "name": "Contacto",
-                    "item": "https://cynekta.com#contacto"
-                }
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desarrollo Web Empresarial"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Intranet Corporativa"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistemas a Medida"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Correo Profesional"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soporte Técnico Informático"}}
             ]
         }
     }
     </script>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased">
-    <!-- HEADER -->
-    <header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <a href="/" class="flex items-center gap-3 focus-ring rounded-lg p-1" aria-label="CYNEKTA Soluciones Tecnológicas - Inicio">
-                    <img src="/img/logo_cynekta.webp" alt="Logo CYNEKTA - Desarrollo Web e Intranet Corporativa" class="w-10 h-10 object-contain" width="40" height="40">
-                    <div>
-                        <span class="text-xl font-black tracking-tight text-slate-900 dark:text-white">CYNEKTA</span>
-                        <span class="block text-xs text-slate-500 dark:text-slate-400 -mt-1">Soluciones Tecnológicas</span>
-                    </div>
-                </a>
+<body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased">
+
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 focus-ring rounded-lg p-1">
+            <img src="/img/logo_cynekta.webp" alt="CYNEKTA" class="w-10 h-10 object-contain" width="40" height="40" loading="lazy">
+            <div>
+                <span class="text-xl font-black tracking-tight text-slate-900 dark:text-white">CYNEKTA</span>
+                <span class="block text-xs text-slate-500 dark:text-slate-400 -mt-1">Soluciones Tecnológicas</span>
             </div>
-            <nav class="hidden md:flex items-center gap-8" aria-label="Navegación principal">
-                <a class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition-colors focus-ring rounded px-2 py-1" href="#servicios" aria-label="Servicios de desarrollo web e intranet">Servicios</a>
-                <a class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition-colors focus-ring rounded px-2 py-1" href="#nosotros" aria-label="Sobre CYNEKTA">Nosotros</a>
-                <a class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition-colors focus-ring rounded px-2 py-1" href="#proyectos" aria-label="Casos de éxito">Proyectos</a>
-                <a class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition-colors focus-ring rounded px-2 py-1" href="#proceso" aria-label="Metodología de trabajo">Proceso</a>
-                <a class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition-colors focus-ring rounded px-2 py-1" href="#contacto" aria-label="Contactar a CYNEKTA">Contacto</a>
-                <a href="#contacto" class="bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all duration-300 shadow-lg hover:shadow-xl focus-ring" aria-label="Comenzar proyecto con CYNEKTA">
-                    Comenzar Proyecto
-                </a>
-            </nav>
-            <button class="md:hidden text-slate-700 dark:text-slate-300 focus-ring rounded-lg p-2" aria-label="Abrir menú móvil">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-        </div>
-    </header>
+        </a>
+        <nav class="hidden md:flex items-center gap-6" aria-label="Navegación principal">
+            <a href="#servicios" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Servicios</a>
+            <a href="#proyectos" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Proyectos</a>
+            <a href="#proceso" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Proceso</a>
+            <a href="#nosotros" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Nosotros</a>
+            <a href="#contacto" class="bg-cynekta-blue hover:bg-cynekta-dark text-white px-5 py-2.5 rounded-lg font-bold text-sm shadow-md transition-all focus-ring">
+                Contáctanos
+            </a>
+        </nav>
+        <button class="md:hidden text-slate-700 dark:text-slate-300 focus-ring rounded-lg p-2" aria-label="Menú">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</header>
 
-    <main class="pt-16">
-        <!-- HERO SECTION -->
-        <section class="relative overflow-hidden bg-gradient-to-b from-white to-slate-50 dark:from-background-dark dark:to-slate-900 py-20 lg:py-32">
-            <div class="absolute inset-0 bg-gradient-radial from-cynekta-blue/5 to-transparent opacity-50"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative grid lg:grid-cols-2 gap-12 items-center">
-                <div class="flex flex-col gap-8">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cynekta-blue/10 text-cynekta-blue text-sm font-bold uppercase tracking-wider border border-cynekta-blue/20">
-                        <span class="material-symbols-outlined text-[16px]" aria-hidden="true">rocket_launch</span>
-                        Desarrollo Web · Intranet · Consultoría IT · Soporte Técnico
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-                        <span class="block text-slate-900 dark:text-white">Expertos en</span>
-                        <span class="gradient-text">Soluciones Tecnológicas</span>
-                        <span class="block text-slate-900 dark:text-white">para tu Empresa</span>
-                    </h1>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
-                        En <strong class="text-cynekta-blue font-semibold">CYNEKTA</strong> ofrecemos <strong>desarrollo web empresarial</strong>, <strong>intranet corporativa</strong>, <strong>arquitectura de sistemas</strong>, <strong>consultoría tecnológica</strong> y <strong>soporte informático profesional</strong>. Aseguramos la continuidad de tu negocio con servicios de <strong>mantenimiento IT</strong> y <strong>transformación digital</strong>.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#contacto" class="bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white px-8 py-4 rounded-lg font-bold text-base shadow-xl hover:shadow-2xl transition-all duration-300 focus-ring" aria-label="Solicitar consulta gratuita">
-                            <span class="flex items-center gap-2">
-                                Solicitar Consulta Gratuita
-                                <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_forward</span>
-                            </span>
-                        </a>
-                        <a href="#servicios" class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white px-8 py-4 rounded-lg font-bold text-base border border-slate-300 dark:border-slate-700 hover:border-cynekta-blue hover:text-cynekta-blue transition-all focus-ring" aria-label="Ver servicios de CYNEKTA">
-                            Ver Nuestros Servicios
-                        </a>
-                    </div>
-                    <div class="flex items-center gap-6 pt-4">
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-cynekta-blue text-[20px]" aria-hidden="true">verified</span>
-                            <span class="text-sm text-slate-600 dark:text-slate-400">Arquitectura Confiable</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-cynekta-blue text-[20px]" aria-hidden="true">speed</span>
-                            <span class="text-sm text-slate-600 dark:text-slate-400">Alto Rendimiento</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-cynekta-blue text-[20px]" aria-hidden="true">shield</span>
-                            <span class="text-sm text-slate-600 dark:text-slate-400">Seguridad Garantizada</span>
-                        </div>
-                    </div>
+<main>
+    <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col gap-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-cynekta-blue text-sm font-bold uppercase tracking-wider border border-blue-200 dark:border-blue-800">
+                    <span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+                    Desarrollo · Intranet · Hosting · Correo
                 </div>
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-cynekta-blue via-blue-500 to-cyan-500 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition duration-1000 animate-pulse-slow"></div>
-                    <div class="relative bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
-                        <div class="aspect-video bg-cover bg-center" 
-                             role="img"
-                             aria-label="Dashboard de desarrollo web e intranet corporativa CYNEKTA"
-                             style='background-image: url("img/img_2.jpg");'>
-                        </div>
-                        <div class="p-6 bg-gradient-to-r from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">
-                            <h2 class="font-bold text-lg text-slate-900 dark:text-white mb-2">TRANSFORMACIÓN DIGITAL</h2>
-                            <p class="text-sm text-slate-600 dark:text-slate-400">Innovación tecnológica que impulsa el crecimiento de tu negocio</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICIOS SECTION - AMPLIADO con Consultoría y Soporte -->
-        <section id="servicios" class="py-24 bg-slate-50 dark:bg-slate-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">
-                        Servicios Integrales <span class="text-cynekta-blue">IT</span>
-                    </h2>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-                        Ofrecemos soluciones tecnológicas completas: desde <strong>desarrollo web</strong> e <strong>intranet</strong> hasta <strong>consultoría estratégica</strong> y <strong>soporte técnico</strong> para garantizar la continuidad de tu negocio.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Desarrollo Web -->
-                    <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 service-card group">
-                        <div class="size-14 rounded-xl bg-gradient-to-br from-cynekta-blue/10 to-cyan-100 dark:from-cynekta-blue/20 dark:to-cyan-900/20 text-cynekta-blue flex items-center justify-center mb-6 group-hover:from-cynekta-blue group-hover:to-cyan-500 group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined text-2xl" aria-hidden="true">code</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Desarrollo Web Empresarial</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            Creamos <strong>páginas web profesionales</strong>, <strong>tiendas virtuales</strong> y <strong>aplicaciones web a medida</strong> de alto rendimiento.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Páginas web corporativas</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">E-commerce y tiendas virtuales</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Aplicaciones web personalizadas</span>
-                            </li>
-                        </ul>
-                        <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-semibold hover:text-cynekta-dark transition-colors" aria-label="Solicitar desarrollo web">
-                            Solicitar Desarrollo Web
-                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </article>
-
-                    <!-- Intranet Corporativa -->
-                    <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 service-card group">
-                        <div class="size-14 rounded-xl bg-gradient-to-br from-cynekta-blue/10 to-purple-100 dark:from-cynekta-blue/20 dark:to-purple-900/20 text-cynekta-blue flex items-center justify-center mb-6 group-hover:from-cynekta-blue group-hover:to-purple-500 group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined text-2xl" aria-hidden="true">hub</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Intranet Corporativa</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            Implementamos <strong>portales de empleados</strong> y <strong>sistemas de gestión documental</strong> que optimizan la comunicación interna.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Portal de empleados</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Gestión documental y workflows</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Flujos de aprobación</span>
-                            </li>
-                        </ul>
-                        <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-semibold hover:text-cynekta-dark transition-colors" aria-label="Implementar intranet corporativa">
-                            Implementar Intranet
-                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </article>
-
-                    <!-- Arquitectura de Sistemas -->
-                    <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 service-card group">
-                        <div class="size-14 rounded-xl bg-gradient-to-br from-cynekta-blue/10 to-emerald-100 dark:from-cynekta-blue/20 dark:to-emerald-900/20 text-cynekta-blue flex items-center justify-center mb-6 group-hover:from-cynekta-blue group-hover:to-emerald-500 group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined text-2xl" aria-hidden="true">settings_input_component</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Arquitectura de Sistemas</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            Diseñamos <strong>infraestructura IT</strong> robusta, <strong>cloud computing</strong> y <strong>seguridad informática</strong> para empresas.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Cloud computing y on-premise</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Seguridad informática</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Infraestructura escalable</span>
-                            </li>
-                        </ul>
-                        <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-semibold hover:text-cynekta-dark transition-colors" aria-label="Optimizar arquitectura de sistemas">
-                            Optimizar Sistemas
-                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </article>
-
-                    <!-- CONSULTORÍA TECNOLÓGICA - NUEVO -->
-                    <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 service-card group">
-                        <div class="size-14 rounded-xl bg-gradient-to-br from-cynekta-blue/10 to-amber-100 dark:from-cynekta-blue/20 dark:to-amber-900/20 text-cynekta-blue flex items-center justify-center mb-6 group-hover:from-cynekta-blue group-hover:to-amber-500 group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined text-2xl" aria-hidden="true">lightbulb</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Consultoría Tecnológica</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            Asesoramiento estratégico para <strong>transformación digital</strong>, <strong>optimización de procesos</strong> y <strong>adopción de nuevas tecnologías</strong>.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Auditoría tecnológica</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Planificación estratégica IT</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Optimización de recursos</span>
-                            </li>
-                        </ul>
-                        <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-semibold hover:text-cynekta-dark transition-colors" aria-label="Solicitar consultoría tecnológica">
-                            Solicitar Consultoría
-                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </article>
-
-                    <!-- SOPORTE TÉCNICO INFORMÁTICO - NUEVO -->
-                    <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 service-card group">
-                        <div class="size-14 rounded-xl bg-gradient-to-br from-cynekta-blue/10 to-rose-100 dark:from-cynekta-blue/20 dark:to-rose-900/20 text-cynekta-blue flex items-center justify-center mb-6 group-hover:from-cynekta-blue group-hover:to-rose-500 group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined text-2xl" aria-hidden="true">support_agent</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Soporte Técnico IT</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            <strong>Mantenimiento informático</strong> preventivo y correctivo, <strong>soporte remoto y presencial</strong>, <strong>backups automatizados</strong> y <strong>monitorización 24/7</strong>.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Mantenimiento preventivo</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Copias de seguridad automatizadas</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Monitorización y alertas</span>
-                            </li>
-                        </ul>
-                        <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-semibold hover:text-cynekta-dark transition-colors" aria-label="Contratar soporte técnico">
-                            Contratar Soporte
-                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </article>
-
-                    <!-- MANTENIMIENTO DE SISTEMAS - NUEVO -->
-                    <article class="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 service-card group">
-                        <div class="size-14 rounded-xl bg-gradient-to-br from-cynekta-blue/10 to-teal-100 dark:from-cynekta-blue/20 dark:to-teal-900/20 text-cynekta-blue flex items-center justify-center mb-6 group-hover:from-cynekta-blue group-hover:to-teal-500 group-hover:text-white transition-all duration-300">
-                            <span class="material-symbols-outlined text-2xl" aria-hidden="true">engineering</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white">Mantenimiento de Sistemas</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            <strong>Actualización de software</strong>, <strong>gestión de antivirus</strong>, <strong>parches de seguridad</strong> y <strong>optimización continua</strong> de tu infraestructura IT.
-                        </p>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Actualizaciones y parches</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Gestión de antivirus</span>
-                            </li>
-                            <li class="flex items-center gap-2 text-sm">
-                                <span class="material-symbols-outlined text-cynekta-blue text-[16px]" aria-hidden="true">check_circle</span>
-                                <span class="text-slate-600 dark:text-slate-400">Análisis de vulnerabilidades</span>
-                            </li>
-                        </ul>
-                        <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-semibold hover:text-cynekta-dark transition-colors" aria-label="Solicitar mantenimiento de sistemas">
-                            Solicitar Mantenimiento
-                            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- NOSOTROS SECTION -->
-        <section id="nosotros" class="py-24 bg-white dark:bg-slate-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-1/2">
-                    <div class="relative w-full aspect-square rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
-                        <div class="absolute inset-0 bg-gradient-to-br from-cynekta-blue/20 to-transparent"></div>
-                        <img src="img/img_1.jpg" alt="Equipo de CYNEKTA - Expertos en desarrollo web, consultoría IT y soporte técnico" loading="lazy" width="600" height="600" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="lg:w-1/2 flex flex-col gap-8">
-                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
-                        Por qué <span class="text-cynekta-blue">CYNEKTA</span> es tu aliado en <span class="text-cynekta-blue">transformación digital</span>
-                    </h2>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-                        En <strong>CYNEKTA</strong> entendemos que la tecnología debe ser una ventaja competitiva. Diseñamos <strong>sistemas digitales</strong> que realmente funcionan para el negocio y garantizamos su continuidad con <strong>soporte técnico profesional</strong> y <strong>consultoría estratégica</strong>.
-                    </p>
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="size-8 shrink-0 rounded-full bg-gradient-to-r from-cynekta-blue/20 to-cyan-500/20 text-cynekta-blue flex items-center justify-center">
-                                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">check</span>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Expertos en desarrollo web</h3>
-                                <p class="text-slate-600 dark:text-slate-400">Creamos <strong>páginas web profesionales</strong> que conectan con tus clientes.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="size-8 shrink-0 rounded-full bg-gradient-to-r from-cynekta-blue/20 to-cyan-500/20 text-cynekta-blue flex items-center justify-center">
-                                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">check</span>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Especialistas en intranet</h3>
-                                <p class="text-slate-600 dark:text-slate-400">Implementamos <strong>intranet corporativa</strong> que optimiza la comunicación interna.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="size-8 shrink-0 rounded-full bg-gradient-to-r from-cynekta-blue/20 to-cyan-500/20 text-cynekta-blue flex items-center justify-center">
-                                <span class="material-symbols-outlined text-[18px]" aria-hidden="true">check</span>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-1">Consultoría y soporte IT</h3>
-                                <p class="text-slate-600 dark:text-slate-400">Ofrecemos <strong>asesoramiento estratégico</strong> y <strong>soporte técnico continuo</strong> para garantizar la continuidad de tu negocio.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-6">
-                        <a href="#contacto" class="inline-flex items-center gap-3 bg-gradient-to-r from-cynekta-blue to-cynekta-dark text-white px-6 py-3 rounded-lg font-bold hover:shadow-xl transition-all duration-300 focus-ring" aria-label="Conoce más sobre CYNEKTA">
-                            <span>Conoce Nuestro Enfoque</span>
-                            <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROYECTOS SECTION -->
-        <section id="proyectos" class="py-24 bg-slate-50 dark:bg-slate-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-1/2 flex flex-col gap-6">
-                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
-                        Caso de Éxito: <span class="text-cynekta-blue">Intranet para ABC Importaciones</span>
-                    </h2>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-                        Desarrollamos una <strong>intranet corporativa</strong> que integra su ERP, automatiza flujos de aprobación y proporciona dashboards en tiempo real. Además, brindamos <strong>soporte técnico continuo</strong> y <strong>mantenimiento de sistemas</strong> para garantizar su óptimo funcionamiento.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-cynekta-blue text-[20px] shrink-0" aria-hidden="true">check_circle</span>
-                            <span class="text-slate-600 dark:text-slate-400"><strong class="text-slate-900 dark:text-white">Reducción del 35%</strong> en tiempos de gestión documental</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-cynekta-blue text-[20px] shrink-0" aria-hidden="true">check_circle</span>
-                            <span class="text-slate-600 dark:text-slate-400"><strong class="text-slate-900 dark:text-white">Integración total</strong> con sistemas existentes</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-cynekta-blue text-[20px] shrink-0" aria-hidden="true">check_circle</span>
-                            <span class="text-slate-600 dark:text-slate-400"><strong class="text-slate-900 dark:text-white">Soporte 24/7</strong> y mantenimiento proactivo</span>
-                        </li>
-                    </ul>
-                    <div class="pt-4">
-                        <a href="#contacto" class="inline-flex items-center gap-3 text-cynekta-blue font-bold hover:text-cynekta-dark transition-colors" aria-label="Ver más proyectos de CYNEKTA">
-                            <span>Ver más casos de éxito</span>
-                            <span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700">
-                        <div class="absolute inset-0 bg-gradient-to-tl from-cynekta-blue/30 to-transparent z-10"></div>
-                        <img src="/img/abc-importaciones-y-servicios.webp" alt="Caso de éxito: Intranet corporativa desarrollada por CYNEKTA" loading="lazy" width="600" height="338" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROCESO SECTION -->
-        <section id="proceso" class="py-24 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">
-                        Nuestro <span class="text-cynekta-blue">Proceso Integral</span>
-                    </h2>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-                        Metodología garantizada para <strong>proyectos de desarrollo web</strong>, <strong>consultoría IT</strong> y <strong>soporte técnico</strong> exitosos.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="text-center flex flex-col items-center">
-                        <div class="size-20 rounded-full bg-gradient-to-br from-cynekta-blue to-cyan-500 shadow-xl flex items-center justify-center text-white font-black text-2xl mb-4 border-4 border-white dark:border-slate-800">
-                            <span>01</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">Consulta & Análisis</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 px-4">Entendemos tus necesidades y definimos la estrategia.</p>
-                    </div>
-                    <div class="text-center flex flex-col items-center">
-                        <div class="size-20 rounded-full bg-gradient-to-br from-cyan-500 to-emerald-500 shadow-xl flex items-center justify-center text-white font-black text-2xl mb-4 border-4 border-white dark:border-slate-800">
-                            <span>02</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">Arquitectura & Diseño</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 px-4">Diseñamos la arquitectura del sistema y el plan de acción.</p>
-                    </div>
-                    <div class="text-center flex flex-col items-center">
-                        <div class="size-20 rounded-full bg-gradient-to-br from-emerald-500 to-purple-500 shadow-xl flex items-center justify-center text-white font-black text-2xl mb-4 border-4 border-white dark:border-slate-800">
-                            <span>03</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">Implementación & Soporte</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 px-4">Desarrollamos, implementamos y brindamos soporte continuo.</p>
-                    </div>
-                    <div class="text-center flex flex-col items-center">
-                        <div class="size-20 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 shadow-xl flex items-center justify-center text-white font-black text-2xl mb-4 border-4 border-white dark:border-slate-800">
-                            <span>04</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-white">Optimización Continua</h3>
-                        <p class="text-sm text-slate-600 dark:text-slate-400 px-4">Monitorizamos, mejoramos y garantizamos resultados.</p>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                    <a href="#contacto" class="inline-flex items-center gap-2 text-cynekta-blue font-bold hover:text-cynekta-dark transition-colors" aria-label="Comenzar proyecto con CYNEKTA">
-                        <span>¿Listo para comenzar tu proyecto?</span>
-                        <span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                    Llevamos tu negocio al <span class="gradient-text">siguiente nivel digital</span>
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl">
+                    En <strong class="text-cynekta-blue">CYNEKTA</strong> creamos páginas web profesionales, intranets que organizan tu empresa, hosting blindado y correo corporativo. Un equipo dedicado que habla tu idioma y entiende lo que necesitas.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacto" class="bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white px-8 py-4 rounded-lg font-bold shadow-xl hover:shadow-2xl transition-all flex items-center gap-2">
+                        Solicitar asesoría gratis
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                    </a>
+                    <a href="#servicios" class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white px-8 py-4 rounded-lg font-bold border border-slate-300 dark:border-slate-700 hover:border-cynekta-blue transition-all">
+                        Ver servicios
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- CONTACTO SECTION -->
-        <section id="contacto" class="py-24 bg-white dark:bg-slate-800">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">
-                        Contáctanos para tu <span class="text-cynekta-blue">Proyecto Digital</span>
-                    </h2>
-                    <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                        Cuéntanos sobre tu proyecto de <strong>desarrollo web</strong>, <strong>intranet corporativa</strong>, <strong>consultoría IT</strong> o <strong>soporte técnico</strong>. Te contactaremos en menos de 24 horas.
-                    </p>
-                </div>
-                
-                <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-8 bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg" id="contactForm" onsubmit="return validateForm(event)">
-                    <input type="hidden" name="form-name" value="contacto" />
-                    <p class="hidden"><label>No llenes esto si eres humano: <input name="bot-field" /></label></p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="nombre" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Nombre Completo *</label>
-                            <input id="nombre" name="nombre" type="text" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-3 focus:border-cynekta-blue focus:ring-2 focus:ring-cynekta-blue/50 transition-all" placeholder="Ej: Juan Pérez" oninput="validateField(this, 'nombre')" onkeypress="return restrictSpecialChars(event, 'nombre')">
-                            <div id="nombre-error" class="error-message hidden"></div>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Email Corporativo *</label>
-                            <input id="email" name="email" type="email" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-3 focus:border-cynekta-blue focus:ring-2 focus:ring-cynekta-blue/50 transition-all" placeholder="ejemplo@empresa.com" oninput="validateField(this, 'email')">
-                            <div id="email-error" class="error-message hidden"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="empresa" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Empresa</label>
-                            <input id="empresa" name="empresa" type="text" class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-3 focus:border-cynekta-blue focus:ring-2 focus:ring-cynekta-blue/50 transition-all" placeholder="Ej: CYNEKTA S.A.C." oninput="validateField(this, 'empresa')" onkeypress="return restrictSpecialChars(event, 'empresa')">
-                            <div id="empresa-error" class="error-message hidden"></div>
-                        </div>
-                        <div>
-                            <label for="telefono" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Teléfono</label>
-                            <input id="telefono" name="telefono" type="tel" class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-3 focus:border-cynekta-blue focus:ring-2 focus:ring-cynekta-blue/50 transition-all" placeholder="+51 992 719 812" oninput="validateField(this, 'telefono')" onkeypress="return restrictPhoneChars(event)">
-                            <div id="telefono-error" class="error-message hidden"></div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="servicio" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Servicio de Interés *</label>
-                        <select id="servicio" name="servicio" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-3 focus:border-cynekta-blue focus:ring-2 focus:ring-cynekta-blue/50 transition-all" onchange="validateField(this, 'servicio')">
-                            <option value="" selected disabled>Selecciona un servicio</option>
-                            <option value="desarrollo-web">Desarrollo Web Empresarial</option>
-                            <option value="intranet">Intranet Corporativa</option>
-                            <option value="arquitectura">Arquitectura de Sistemas</option>
-                            <option value="consultoria">Consultoría Tecnológica</option>
-                            <option value="soporte">Soporte Técnico Informático</option>
-                            <option value="mantenimiento">Mantenimiento de Sistemas</option>
-                        </select>
-                        <div id="servicio-error" class="error-message hidden"></div>
-                    </div>
-                    
-                    <div>
-                        <label for="mensaje" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Describe tu Proyecto *</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white px-4 py-3 focus:border-cynekta-blue focus:ring-2 focus:ring-cynekta-blue/50 transition-all resize-none" placeholder="Cuéntanos sobre tu proyecto de desarrollo web, intranet, consultoría o necesidades de soporte técnico..." oninput="validateField(this, 'mensaje')" onkeypress="return restrictMessageChars(event)"></textarea>
-                        <div id="mensaje-error" class="error-message hidden"></div>
-                    </div>
-                    
-                    <button type="submit" class="w-full bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white font-bold py-4 rounded-lg text-lg shadow-xl hover:shadow-2xl transition-all duration-300 focus-ring" aria-label="Enviar mensaje a CYNEKTA">
-                        <span class="flex items-center justify-center gap-2">
-                            Enviar Mensaje
-                            <span class="material-symbols-outlined" aria-hidden="true">send</span>
-                        </span>
-                    </button>
-                </form>
-                
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
-                        <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-4" aria-hidden="true">mail</span>
-                        <h3 class="font-bold text-lg mb-2">Email</h3>
-                        <p class="text-slate-600 dark:text-slate-400">cynekta@gmail.com</p>
-                    </div>
-                    <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
-                        <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-4" aria-hidden="true">phone</span>
-                        <h3 class="font-bold text-lg mb-2">Teléfono</h3>
-                        <p class="text-slate-600 dark:text-slate-400">+51 992 719 812</p>
-                    </div>
-                    <div class="p-6 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
-                        <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-4" aria-hidden="true">schedule</span>
-                        <h3 class="font-bold text-lg mb-2">Horario</h3>
-                        <p class="text-slate-600 dark:text-slate-400">Lun-Vie: 8:00 - 18:00</p>
-                    </div>
+                <div class="flex items-center gap-5 text-sm text-slate-500 dark:text-slate-400">
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-cynekta-blue text-[18px]">verified</span> Soporte real</span>
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-cynekta-blue text-[18px]">security</span> Seguridad garantizada</span>
+                    <span class="flex items-center gap-1"><span class="material-symbols-outlined text-cynekta-blue text-[18px]">auto_graph</span> Resultados medibles</span>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div class="space-y-6">
-                    <div class="flex items-center gap-3">
-                        <img src="/img/logo_cynekta.webp" alt="CYNEKTA - Desarrollo Web, Consultoría IT y Soporte Técnico" class="w-10 h-10 object-contain" width="40" height="40">
-                        <div>
-                            <span class="text-xl font-black text-white tracking-tight">CYNEKTA</span>
-                            <p class="text-xs text-slate-500">Soluciones Tecnológicas</p>
-                        </div>
+            <div class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-gradient-radial from-cynekta-blue/30 to-transparent rounded-2xl blur-3xl"></div>
+                <div class="relative bg-white dark:bg-slate-800 rounded-2xl shadow-2xl p-6 border border-slate-200 dark:border-slate-700">
+                    <div class="aspect-video rounded-lg mb-4 overflow-hidden">
+                        <img src="/img/imagen-1.webp" alt="Soluciones digitales profesionales para tu empresa" class="w-full h-full object-cover" loading="lazy">
                     </div>
-                    <p class="text-sm leading-relaxed">
-                        Expertos en <strong class="text-white">desarrollo web empresarial</strong>, <strong class="text-white">intranet corporativa</strong>, <strong class="text-white">consultoría IT</strong> y <strong class="text-white">soporte técnico profesional</strong>.
-                    </p>
+                    <h3 class="font-bold text-lg mb-1">Tu presencia digital profesional</h3>
+                    <p class="text-sm text-slate-500">Sitios web, sistemas internos y correo corporativo, todo en un solo lugar.</p>
                 </div>
-                
-                <div>
-                    <h4 class="font-bold text-white text-sm mb-6 uppercase tracking-wider">Servicios</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#servicios" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Desarrollo Web Empresarial">Desarrollo Web</a></li>
-                        <li><a href="#servicios" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Intranet Corporativa">Intranet Corporativa</a></li>
-                        <li><a href="#servicios" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Arquitectura de Sistemas">Arquitectura de Sistemas</a></li>
-                        <li><a href="#servicios" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Consultoría Tecnológica">Consultoría IT</a></li>
-                        <li><a href="#servicios" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Soporte Técnico">Soporte Técnico</a></li>
-                        <li><a href="#servicios" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Mantenimiento de Sistemas">Mantenimiento</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-white text-sm mb-6 uppercase tracking-wider">Empresa</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#nosotros" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Sobre CYNEKTA">Sobre CYNEKTA</a></li>
-                        <li><a href="#proceso" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Nuestro Proceso">Nuestro Proceso</a></li>
-                        <li><a href="#proyectos" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Casos de Éxito">Casos de Éxito</a></li>
-                        <li><a href="#contacto" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-white text-sm mb-6 uppercase tracking-wider">Legal</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Política de Privacidad">Política de Privacidad</a></li>
-                        <li><a href="#" class="hover:text-white hover:text-cynekta-blue transition-colors" aria-label="Términos de Servicio">Términos de Servicio</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-xs text-slate-500">
-                    © 2026 <span class="text-cynekta-blue font-bold">CYNEKTA Soluciones Tecnológicas</span>. Todos los derechos reservados.
-                </p>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <!-- SweetAlert2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <section id="servicios" aria-labelledby="servicios-heading" class="py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="servicios-heading" class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">Lo que <span class="text-cynekta-blue">hacemos</span> por tu empresa</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
+                    No enredamos con términos complicados. Te entregamos soluciones listas para funcionar y te explicamos todo con claridad.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-white flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined">language</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Páginas Web</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                        Creamos sitios web rápidos, atractivos y que funcionan en celulares. Ideales para mostrar tu negocio, vender en línea o captar clientes.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Páginas institucionales</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Tiendas virtuales</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Landings para campañas</li>
+                    </ul>
+                    <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Solicitar información →</a>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined">hub</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Intranet Corporativa</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                        Organiza a tu equipo, centraliza documentos y automatiza procesos internos. Todo en un solo lugar, accesible desde cualquier dispositivo.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Portal del empleado</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Gestión de documentos</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Flujos de aprobación</li>
+                    </ul>
+                    <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Cuéntanos tu caso →</a>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-green-500 to-teal-500 text-white flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined">cloud_done</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Hosting & Dominio</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                        Alojamos tu web en servidores de alto rendimiento con protección avanzada. Incluye certificado de seguridad (SSL) y respaldo automático.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Velocidad garantizada</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Protección contra ataques</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Correo incluido (opcional)</li>
+                    </ul>
+                    <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Elegir plan →</a>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 text-white flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Correo Profesional</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                        Olvídate del correo gratuito. Te configuramos un correo con el nombre de tu empresa (@tuempresa.com) usando Gmail, fácil de usar y seguro.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Correo con dominio propio</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Migración de correos</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Configuración en celular</li>
+                    </ul>
+                    <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Solicitar cotización →</a>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined">support_agent</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Soporte Técnico</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                        ¿Problemas con tu web, correo o sistemas? Te damos asistencia rápida y en tu idioma. Resolvemos tus incidencias para que no pierdas tiempo.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Soporte remoto</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Mantenimiento preventivo</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Actualizaciones de seguridad</li>
+                    </ul>
+                    <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Consultar planes →</a>
+                </div>
+                <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-amber-500 to-yellow-500 text-white flex items-center justify-center mb-4">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Consultoría Digital</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
+                        No sabes por dónde empezar. Analizamos tu negocio y te proponemos una hoja de ruta digital clara, sin compromisos.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Diagnóstico gratuito</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Recomendaciones prácticas</li>
+                        <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Acompañamiento en la implementación</li>
+                    </ul>
+                    <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Pide tu diagnóstico →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        const allowedPatterns = {
-            nombre: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]$/,
-            empresa: /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9\s\.\-]$/,
-            telefono: /^[0-9\s\+\-\(\)]$/,
-            mensaje: /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑüÜ\s\.\,\;\:\!\?\(\)\-]$/
-        };
+    <section id="proyectos" aria-labelledby="proyectos-heading" class="py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 id="proyectos-heading" class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">Proyectos <span class="text-cynekta-blue">que hablan por nosotros</span></h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    Cada solución que desarrollamos resuelve un problema real de negocio.
+                </p>
+            </div>
 
-        function restrictSpecialChars(event, fieldType) {
-            const char = String.fromCharCode(event.charCode);
-            const pattern = allowedPatterns[fieldType];
-            if (!pattern.test(char)) {
-                event.preventDefault();
-                return false;
-            }
-            return true;
-        }
-
-        function restrictPhoneChars(event) {
-            const char = String.fromCharCode(event.charCode);
-            const pattern = allowedPatterns.telefono;
-            if (!pattern.test(char)) {
-                event.preventDefault();
-                return false;
-            }
-            return true;
-        }
-
-        function restrictMessageChars(event) {
-            const char = String.fromCharCode(event.charCode);
-            const pattern = allowedPatterns.mensaje;
-            if (!pattern.test(char)) {
-                event.preventDefault();
-                return false;
-            }
-            return true;
-        }
-
-        function validateField(field, fieldName) {
-            const value = field.value;
-            const errorDiv = document.getElementById(`${fieldName}-error`);
-            
-            field.classList.remove('input-error');
-            errorDiv.classList.add('hidden');
-            
-            let isValid = true;
-            let errorMessage = '';
-            
-            if (fieldName === 'nombre' || fieldName === 'empresa' || fieldName === 'mensaje' || fieldName === 'telefono') {
-                let pattern;
-                if (fieldName === 'nombre') pattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]*$/;
-                else if (fieldName === 'empresa') pattern = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9\s\.\-]*$/;
-                else if (fieldName === 'telefono') pattern = /^[0-9\s\+\-\(\)]*$/;
-                else if (fieldName === 'mensaje') pattern = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑüÜ\s\.\,\;\:\!\?\(\)\-]*$/;
-                
-                if (value && !pattern.test(value)) {
-                    isValid = false;
-                    if (fieldName === 'nombre') errorMessage = 'Solo letras y espacios';
-                    else if (fieldName === 'empresa') errorMessage = 'Solo letras, números, espacios, puntos y guiones';
-                    else if (fieldName === 'telefono') errorMessage = 'Solo números, espacios, +, - y ()';
-                    else if (fieldName === 'mensaje') errorMessage = 'Solo texto con puntuación básica';
-                }
-            }
-            
-            if (fieldName === 'email' && value) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(value)) {
-                    isValid = false;
-                    errorMessage = 'Email inválido';
-                }
-            }
-            
-            if (fieldName === 'servicio' && !value) {
-                isValid = false;
-                errorMessage = 'Selecciona un servicio';
-            }
-            
-            if (!isValid) {
-                field.classList.add('input-error');
-                errorDiv.textContent = errorMessage;
-                errorDiv.classList.remove('hidden');
-                return false;
-            }
-            
-            return true;
-        }
-        
-        function validateForm(event) {
-            event.preventDefault();
-            
-            const fields = [
-                { id: 'nombre', required: true },
-                { id: 'email', required: true },
-                { id: 'empresa', required: false },
-                { id: 'telefono', required: false },
-                { id: 'servicio', required: true },
-                { id: 'mensaje', required: true }
-            ];
-            
-            let isFormValid = true;
-            
-            fields.forEach(field => {
-                const fieldElement = document.getElementById(field.id);
-                if (fieldElement && (field.required || fieldElement.value)) {
-                    if (!validateField(fieldElement, field.id)) {
-                        isFormValid = false;
-                    }
-                }
-            });
-            
-            if (isFormValid) {
-                const form = document.getElementById('contactForm');
-                const formData = new FormData(form);
-                
-                fetch('/', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                    body: new URLSearchParams(formData).toString()
-                })
-                .then(() => {
-                    const isDark = document.documentElement.classList.contains('dark');
-                    
-                    Swal.fire({
-                        title: '¡Mensaje Enviado!',
-                        html: `
-                            <div style="text-align: left;">
-                                <p style="margin-bottom: 1rem;">
-                                    Gracias por contactar a <strong style="color: #3b82f6;">CYNEKTA</strong>.
-                                </p>
-                                <p style="margin-bottom: 1rem; color: #475569;">
-                                    Hemos recibido tu información y un especialista en <strong>desarrollo web</strong>, <strong>consultoría IT</strong> o <strong>soporte técnico</strong> se comunicará contigo en menos de 24 horas.
-                                </p>
+            <div class="max-w-4xl mx-auto mb-10">
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
+                    <div class="grid md:grid-cols-5">
+                        <div class="md:col-span-2 bg-gradient-to-br from-cynekta-blue/5 to-blue-100 dark:from-cynekta-blue/20 dark:to-slate-800 p-8 flex flex-col items-center justify-center text-center">
+                            <img src="/img/logo-abc.png" alt="Logo de ABC Importaciones y Servicios, cliente de CYNEKTA" class="w-32 h-auto mb-4 bg-white p-2 rounded-xl shadow-sm" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2260%22%3E%3Crect width=%22120%22 height=%2260%22 fill=%22%23f1f5f9%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23475569%22 font-size=%2214%22%3EABC%3C/text%3E%3C/svg%3E';">
+                            <h3 class="font-bold text-xl text-slate-900 dark:text-white">ABC Importaciones y Servicios</h3>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Sector Logística y Comercio</p>
+                        </div>
+                        <div class="md:col-span-3 p-8 flex flex-col justify-center">
+                            <p class="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+                                Plataforma multi-rol con impacto regulatorio. Intranet corporativa que integra gestión de empleados, documentos y flujos de aprobación, reduciendo los tiempos operativos en más del 30%.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Intranet Corporativa</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">Gestión Documental</span>
+                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Multi-rol</span>
+                                <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">Impacto regulatorio</span>
                             </div>
-                        `,
-                        icon: 'success',
-                        confirmButtonText: 'Cerrar',
-                        customClass: {
-                            popup: isDark ? 'dark' : ''
-                        },
-                        timer: 5000,
-                        timerProgressBar: true
-                    });
-                    
-                    form.reset();
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    Swal.fire({
-                        title: 'Error',
-                        text: 'Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.',
-                        icon: 'error',
-                        confirmButtonText: 'Cerrar'
-                    });
-                });
-            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
+                    <div class="bg-gradient-to-r from-amber-500/10 to-yellow-50 dark:from-amber-500/20 dark:to-slate-800 p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="size-12 rounded-lg bg-white dark:bg-slate-700 p-1.5 shadow-sm flex items-center justify-center">
+                                <span class="material-symbols-outlined text-3xl text-amber-600">local_gas_station</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white">Sistema de Ventas para Grifos</h3>
+                                <p class="text-xs text-slate-500">Combustibles</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">
+                            Control de ventas con asociación de vehículos y personal autorizado, optimizando el despacho y la eficiencia operativa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
+                    <div class="bg-gradient-to-r from-purple-500/10 to-pink-50 dark:from-purple-500/20 dark:to-slate-800 p-5">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="size-12 rounded-lg bg-white dark:bg-slate-700 p-1.5 shadow-sm flex items-center justify-center">
+                                <span class="material-symbols-outlined text-3xl text-purple-600">nightlife</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 dark:text-white">Sistema Integral para Discoteca</h3>
+                                <p class="text-xs text-slate-500">Entretenimiento</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">
+                            Gestión completa de inventario, ventas por puesto de mozo y control de invitados VIP, todo en un solo sistema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-slate-600 dark:text-slate-400 mb-4">Cada proyecto es un reto distinto. ¿Tienes el tuyo?</p>
+                <a href="#contacto" class="inline-flex items-center gap-2 bg-cynekta-blue hover:bg-cynekta-dark text-white px-8 py-3 rounded-lg font-bold shadow-lg transition-all">
+                    Cuéntanos tu proyecto <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="proceso" aria-labelledby="proceso-heading" class="py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 id="proceso-heading" class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">Nuestra <span class="text-cynekta-blue">forma de trabajar</span></h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Sin sorpresas, con comunicación constante.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">1</div>
+                    <h3 class="font-bold mb-2">Te escuchamos</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Entendemos tus metas y dificultades. Nos reunimos contigo (virtual o presencial) sin costo.</p>
+                </div>
+                <div class="text-center">
+                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">2</div>
+                    <h3 class="font-bold mb-2">Diseñamos la solución</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Preparamos un plan detallado con tiempos, alcance y presupuesto claro. Tú decides.</p>
+                </div>
+                <div class="text-center">
+                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">3</div>
+                    <h3 class="font-bold mb-2">Desarrollamos e implementamos</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Construimos tu proyecto manteniéndote al día. Revisamos juntos cada avance.</p>
+                </div>
+                <div class="text-center">
+                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">4</div>
+                    <h3 class="font-bold mb-2">Damos soporte continuo</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Después del lanzamiento seguimos a tu lado. Garantía y mantenimiento disponible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" aria-labelledby="nosotros-heading" class="py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 flex justify-center">
+                <div class="grid grid-cols-2 gap-4 w-fit">
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-cynekta-blue to-cyan-500 flex items-center justify-center text-white shadow-lg">
+                        <i class="bi bi-pc-display-horizontal text-2xl sm:text-3xl lg:text-4xl"></i>
+                    </div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg">
+                        <i class="bi bi-diagram-3-fill text-2xl sm:text-3xl lg:text-4xl"></i>
+                    </div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-white shadow-lg">
+                        <i class="bi bi-headset text-2xl sm:text-3xl lg:text-4xl"></i>
+                    </div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white shadow-lg">
+                        <i class="bi bi-shield-lock-fill text-2xl sm:text-3xl lg:text-4xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <h2 id="nosotros-heading" class="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white">Somos <span class="text-cynekta-blue">CYNEKTA</span>, un equipo comprometido</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+                    No somos una agencia gigante donde te pierdes en un laberinto de ejecutivos. Somos un grupo de profesionales de la tecnología que trabajamos de forma cercana, dedicados a que tu empresa tenga las herramientas digitales que realmente necesita.
+                </p>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
+                    Hemos desarrollado sistemas a medida para sectores tan distintos como logística, estaciones de servicio y entretenimiento. Cada proyecto es liderado por un desarrollador senior que te explica todo sin tecnicismos, para que tomes decisiones informadas. Nos apasiona la seguridad, la velocidad y la atención al detalle.
+                </p>
+                <div class="flex gap-4 mt-6">
+                    <a href="#contacto" class="bg-cynekta-blue hover:bg-cynekta-dark text-white px-6 py-3 rounded-lg font-bold transition">Trabaja con nosotros</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-labelledby="faq-heading" class="py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 id="faq-heading" class="text-3xl md:text-4xl font-black mb-12 text-center text-slate-900 dark:text-white">Preguntas <span class="text-cynekta-blue">frecuentes</span></h2>
+            <div class="space-y-6">
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Cuánto tardan en entregar un proyecto? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
+                    <p class="mt-4 text-slate-600 dark:text-slate-400">Depende del alcance. Una página web simple puede estar lista en 5 días hábiles. Proyectos más complejos como intranets o sistemas a medida pueden tomar de 3 a 8 semanas. Siempre definimos fechas claras en la propuesta inicial.</p>
+                </details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Cómo funcionan los pagos y el mantenimiento mensual? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
+                    <p class="mt-4 text-slate-600 dark:text-slate-400">Realizas un único pago por el desarrollo y luego, si lo deseas, una pequeña cuota mensual que cubre hosting, seguridad, soporte y actualizaciones. Así mantenemos tu proyecto al día sin que tengas que preocuparte.</p>
+                </details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Qué incluye el soporte mensual? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
+                    <p class="mt-4 text-slate-600 dark:text-slate-400">Incluye copias de seguridad periódicas, actualización de plugins/seguridad, monitoreo de disponibilidad y asistencia técnica por correo o WhatsApp en horario hábil. También aplican descuentos para nuevas funcionalidades.</p>
+                </details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">No sé nada de tecnología, ¿es un problema? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
+                    <p class="mt-4 text-slate-600 dark:text-slate-400">¡Para nada! Justamente nuestro trabajo es traducir lo técnico a soluciones que tú entiendas. Te guiaremos en cada paso para que tomes las mejores decisiones sin estrés.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="contacto-heading" class="py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 id="contacto-heading" class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">Da el primer paso <span class="text-cynekta-blue">hoy</span></h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Cuéntanos tu idea o necesidad. Te responderemos en máximo 24 horas con una propuesta sin compromiso.</p>
+            </div>
             
-            return false;
-        }
+            <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6 bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg" onsubmit="return handleSubmit(event)">
+                <input type="hidden" name="form-name" value="contacto" />
+                <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-bold mb-2">Nombre *</label>
+                        <input id="nombre" name="nombre" type="text" required class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="Tu nombre completo">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-bold mb-2">Email *</label>
+                        <input id="email" name="email" type="email" required class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="tu@empresa.com">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="servicio" class="block text-sm font-bold mb-2">¿Qué servicio te interesa?</label>
+                    <select id="servicio" name="servicio" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue">
+                        <option value="" selected disabled>Selecciona una opción</option>
+                        <option value="landing">Página Web / Landing</option>
+                        <option value="intranet">Intranet Corporativa</option>
+                        <option value="sistema">Sistema a medida</option>
+                        <option value="hosting">Hosting y Dominio</option>
+                        <option value="correo">Correo Profesional</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="otro">Otro / No estoy seguro</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="mensaje" class="block text-sm font-bold mb-2">Cuéntanos más *</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue resize-none" placeholder="Descríbenos tu proyecto o necesidad..."></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white font-bold py-4 rounded-lg text-lg shadow-xl transition-all flex items-center justify-center gap-2">
+                    Enviar solicitud <span class="material-symbols-outlined">send</span>
+                </button>
+            </form>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+                    <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">mail</span>
+                    <h3 class="font-bold">Email</h3>
+                    <p class="text-slate-600 dark:text-slate-400">cynekta@gmail.com</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+                    <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">phone</span>
+                    <h3 class="font-bold">WhatsApp</h3>
+                    <p class="text-slate-600 dark:text-slate-400">+51 992 719 812</p>
+                </div>
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+                    <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">schedule</span>
+                    <h3 class="font-bold">Horario</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Lun-Vie 8am-6pm (GMT-5)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <div class="flex items-center gap-3 mb-4">
+                <img src="/img/logo_cynekta.webp" alt="CYNEKTA" class="w-10 h-10" loading="lazy">
+                <span class="text-xl font-black text-white">CYNEKTA</span>
+            </div>
+            <p class="text-sm">Soluciones digitales para empresas. Desarrollo web, intranets, hosting, correo profesional y soporte técnico.</p>
+        </div>
+        <div>
+            <h4 class="font-bold text-white mb-4 uppercase text-sm">Enlaces</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#servicios" class="hover:text-cynekta-blue transition">Servicios</a></li>
+                <li><a href="#proyectos" class="hover:text-cynekta-blue transition">Proyectos</a></li>
+                <li><a href="#nosotros" class="hover:text-cynekta-blue transition">Nosotros</a></li>
+                <li><a href="#contacto" class="hover:text-cynekta-blue transition">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-white mb-4 uppercase text-sm">Legal</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-cynekta-blue transition">Política de Privacidad</a></li>
+                <li><a href="#" class="hover:text-cynekta-blue transition">Términos de Servicio</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+        © 2026 CYNEKTA Soluciones Tecnológicas. Todos los derechos reservados.
+    </div>
+</footer>
+
+<a href="https://wa.me/51992719812?text=Hola%20CYNEKTA%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="whatsapp-bubble" aria-label="Chatear en WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
         
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+            Swal.fire({
+                title: '¡Solicitud enviada!',
+                text: 'Gracias por contactarnos. Un asesor te responderá en menos de 24 horas.',
+                icon: 'success',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#3b82f6',
+                timer: 5000,
+                timerProgressBar: true
             });
+            form.reset();
+        })
+        .catch(() => {
+            Swal.fire('Error', 'No se pudo enviar. Intenta de nuevo.', 'error');
         });
-    </script>
+        return false;
+    }
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === "#") return;
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+        });
+    });
+</script>
 </body>
 </html>
