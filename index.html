@@ -11,50 +11,25 @@
     <meta name="geo.region" content="PE-LMA">
     <meta name="geo.placename" content="Lima, Perú">
     <meta name="language" content="Spanish">
-    
     <meta property="og:title" content="CYNEKTA | Desarrollo Web, Intranet y Hosting para Empresas">
     <meta property="og:description" content="Creamos páginas web, intranets y damos hosting blindado con soporte real. Soluciones digitales para tu negocio.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cynekta.com/img/desarrollo-web-empresas.webp">
     <meta property="og:url" content="https://cynekta.com">
     <meta property="og:locale" content="es_ES">
-    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CYNEKTA | Desarrollo Web, Intranet y Hosting para Empresas">
     <meta name="twitter:description" content="Expertos en tecnología para empresas. Desarrollo web, intranet, hosting y correo profesional.">
     <meta name="twitter:image" content="https://cynekta.com/img/desarrollo-web-empresas.webp">
-    
     <link rel="canonical" href="https://cynekta.com">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/img/logo_cynekta.webp">
-    
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "cynekta-blue": "#3b82f6",
-                        "cynekta-dark": "#1e40af",
-                    },
-                    fontFamily: { "display": ["Inter", "sans-serif"] },
-                    animation: { 'gradient': 'gradient 3s ease infinite' },
-                },
-            },
-        }
-    </script>
-    
+    <link href="asset/css/tailwind.min.css" rel="stylesheet">
+    <link href="asset/css/inter.css" rel="stylesheet">
+    <link href="asset/css/material-symbols-outlined.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="asset/css/sweetalert2.min.css">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .gradient-text {
@@ -91,7 +66,6 @@
         .whatsapp-bubble:hover { transform: scale(1.1); }
         .whatsapp-bubble i { font-size: 32px; color: white; }
     </style>
-
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -136,7 +110,6 @@
         }
     }
     </script>
-    
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -179,7 +152,6 @@
     </script>
 </head>
 <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased">
-
 <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur border-b border-slate-200 dark:border-slate-800 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <a href="/" class="flex items-center gap-3 focus-ring rounded-lg p-1" aria-label="CYNEKTA - Inicio">
@@ -194,16 +166,13 @@
             <a href="#proyectos" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Proyectos</a>
             <a href="#proceso" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Proceso</a>
             <a href="#nosotros" class="text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-cynekta-blue transition">Nosotros</a>
-            <a href="#contacto" class="bg-cynekta-blue hover:bg-cynekta-dark text-white px-5 py-2.5 rounded-lg font-bold text-sm shadow-md transition-all focus-ring">
-                Contáctanos
-            </a>
+            <a href="#contacto" class="bg-cynekta-blue hover:bg-cynekta-dark text-white px-5 py-2.5 rounded-lg font-bold text-sm shadow-md transition-all focus-ring">Contáctanos</a>
         </nav>
         <button class="md:hidden text-slate-700 dark:text-slate-300 focus-ring rounded-lg p-2" aria-label="Menú móvil">
             <span class="material-symbols-outlined">menu</span>
         </button>
     </div>
 </header>
-
 <main>
     <section class="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 py-20 lg:py-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
@@ -212,20 +181,11 @@
                     <span class="material-symbols-outlined text-[16px]">rocket_launch</span>
                     Desarrollo · Intranet · Hosting · Correo
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-                    Desarrollo Web, <span class="gradient-text">Intranet Corporativa</span> y Hosting Seguro para Empresas
-                </h1>
-                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl">
-                    En <strong class="text-cynekta-blue">CYNEKTA</strong> creamos <strong>páginas web profesionales</strong>, <strong>intranets que organizan tu empresa</strong>, <strong>hosting blindado</strong> y <strong>correo corporativo</strong>. Un equipo dedicado que habla tu idioma y entiende lo que necesitas.
-                </p>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">Desarrollo Web, <span class="gradient-text">Intranet Corporativa</span> y Hosting Seguro para Empresas</h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-xl">En <strong class="text-cynekta-blue">CYNEKTA</strong> creamos <strong>páginas web profesionales</strong>, <strong>intranets que organizan tu empresa</strong>, <strong>hosting blindado</strong> y <strong>correo corporativo</strong>. Un equipo dedicado que habla tu idioma y entiende lo que necesitas.</p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#contacto" class="bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white px-8 py-4 rounded-lg font-bold shadow-xl hover:shadow-2xl transition-all flex items-center gap-2">
-                        Solicitar asesoría gratis
-                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-                    </a>
-                    <a href="#servicios" class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white px-8 py-4 rounded-lg font-bold border border-slate-300 dark:border-slate-700 hover:border-cynekta-blue transition-all">
-                        Ver servicios
-                    </a>
+                    <a href="#contacto" class="bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white px-8 py-4 rounded-lg font-bold shadow-xl hover:shadow-2xl transition-all flex items-center gap-2">Solicitar asesoría gratis <span class="material-symbols-outlined text-[20px]">arrow_forward</span></a>
+                    <a href="#servicios" class="bg-white dark:bg-slate-800 text-slate-800 dark:text-white px-8 py-4 rounded-lg font-bold border border-slate-300 dark:border-slate-700 hover:border-cynekta-blue transition-all">Ver servicios</a>
                 </div>
                 <div class="flex items-center gap-5 text-sm text-slate-500 dark:text-slate-400">
                     <span class="flex items-center gap-1"><span class="material-symbols-outlined text-cynekta-blue text-[18px]">verified</span> Soporte real</span>
@@ -245,7 +205,6 @@
             </div>
         </div>
     </section>
-
     <section class="py-16 bg-white dark:bg-slate-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-2xl md:text-3xl font-bold mb-6 text-slate-900 dark:text-white">¿Por qué elegir <span class="text-cynekta-blue">CYNEKTA</span>?</h2>
@@ -268,24 +227,17 @@
             </div>
         </div>
     </section>
-
     <section id="servicios" aria-labelledby="servicios-heading" class="py-24 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 id="servicios-heading" class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">Lo que <span class="text-cynekta-blue">hacemos</span> por tu empresa</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">
-                    Te entregamos soluciones listas para funcionar y te explicamos todo con claridad.
-                </p>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Te entregamos soluciones listas para funcionar y te explicamos todo con claridad.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
-                    <div class="size-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-white flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined">language</span>
-                    </div>
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 text-white flex items-center justify-center mb-4"><span class="material-symbols-outlined">language</span></div>
                     <h3 class="font-bold text-lg mb-2">Páginas Web</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                        Creamos sitios web rápidos, atractivos y que funcionan en celulares. Ideales para mostrar tu negocio, vender en línea o captar clientes.
-                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Creamos sitios web rápidos, atractivos y que funcionan en celulares. Ideales para mostrar tu negocio, vender en línea o captar clientes.</p>
                     <ul class="space-y-2 text-sm text-slate-500 mb-4">
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Páginas institucionales</li>
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Tiendas virtuales</li>
@@ -294,13 +246,9 @@
                     <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Solicitar información →</a>
                 </div>
                 <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
-                    <div class="size-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined">hub</span>
-                    </div>
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white flex items-center justify-center mb-4"><span class="material-symbols-outlined">hub</span></div>
                     <h3 class="font-bold text-lg mb-2">Intranet Corporativa</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                        Organiza a tu equipo, centraliza documentos y automatiza procesos internos. Todo en un solo lugar, accesible desde cualquier dispositivo.
-                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Organiza a tu equipo, centraliza documentos y automatiza procesos internos. Todo en un solo lugar, accesible desde cualquier dispositivo.</p>
                     <ul class="space-y-2 text-sm text-slate-500 mb-4">
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Portal del empleado</li>
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Gestión de documentos</li>
@@ -309,13 +257,9 @@
                     <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Cuéntanos tu caso →</a>
                 </div>
                 <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
-                    <div class="size-12 rounded-lg bg-gradient-to-br from-green-500 to-teal-500 text-white flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined">cloud_done</span>
-                    </div>
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-green-500 to-teal-500 text-white flex items-center justify-center mb-4"><span class="material-symbols-outlined">cloud_done</span></div>
                     <h3 class="font-bold text-lg mb-2">Hosting & Dominio</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                        Alojamos tu web en servidores de alto rendimiento con protección avanzada. Incluye certificado de seguridad (SSL) y respaldo automático.
-                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Alojamos tu web en servidores de alto rendimiento con protección avanzada. Incluye certificado de seguridad (SSL) y respaldo automático.</p>
                     <ul class="space-y-2 text-sm text-slate-500 mb-4">
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Velocidad garantizada</li>
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Protección contra ataques</li>
@@ -324,13 +268,9 @@
                     <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Elegir plan →</a>
                 </div>
                 <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
-                    <div class="size-12 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 text-white flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined">mail</span>
-                    </div>
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-red-500 to-orange-500 text-white flex items-center justify-center mb-4"><span class="material-symbols-outlined">mail</span></div>
                     <h3 class="font-bold text-lg mb-2">Correo Profesional</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                        Olvídate del correo gratuito. Te configuramos un correo con el nombre de tu empresa (@tuempresa.com) usando Google Workspace, fácil de usar y seguro.
-                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Olvídate del correo gratuito. Te configuramos un correo con el nombre de tu empresa (@tuempresa.com) usando Google Workspace, fácil de usar y seguro.</p>
                     <ul class="space-y-2 text-sm text-slate-500 mb-4">
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Correo con dominio propio</li>
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Migración de correos</li>
@@ -339,13 +279,9 @@
                     <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Solicitar cotización →</a>
                 </div>
                 <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
-                    <div class="size-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined">support_agent</span>
-                    </div>
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 text-white flex items-center justify-center mb-4"><span class="material-symbols-outlined">support_agent</span></div>
                     <h3 class="font-bold text-lg mb-2">Soporte Técnico</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                        ¿Problemas con tu web, correo o sistemas? Te damos asistencia rápida y en tu idioma. Resolvemos tus incidencias para que no pierdas tiempo.
-                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">¿Problemas con tu web, correo o sistemas? Te damos asistencia rápida y en tu idioma. Resolvemos tus incidencias para que no pierdas tiempo.</p>
                     <ul class="space-y-2 text-sm text-slate-500 mb-4">
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Soporte remoto</li>
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Mantenimiento preventivo</li>
@@ -354,13 +290,9 @@
                     <a href="#contacto" class="text-cynekta-blue font-semibold text-sm hover:underline">Consultar planes →</a>
                 </div>
                 <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 service-card transition-all duration-300">
-                    <div class="size-12 rounded-lg bg-gradient-to-br from-amber-500 to-yellow-500 text-white flex items-center justify-center mb-4">
-                        <span class="material-symbols-outlined">lightbulb</span>
-                    </div>
+                    <div class="size-12 rounded-lg bg-gradient-to-br from-amber-500 to-yellow-500 text-white flex items-center justify-center mb-4"><span class="material-symbols-outlined">lightbulb</span></div>
                     <h3 class="font-bold text-lg mb-2">Consultoría Digital</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">
-                        No sabes por dónde empezar. Analizamos tu negocio y te proponemos una hoja de ruta digital clara, sin compromisos.
-                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">No sabes por dónde empezar. Analizamos tu negocio y te proponemos una hoja de ruta digital clara, sin compromisos.</p>
                     <ul class="space-y-2 text-sm text-slate-500 mb-4">
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Diagnóstico gratuito</li>
                         <li class="flex items-center gap-1"><span class="material-symbols-outlined text-green-500 text-[18px]">check_circle</span> Recomendaciones prácticas</li>
@@ -371,14 +303,11 @@
             </div>
         </div>
     </section>
-
     <section id="proyectos" aria-labelledby="proyectos-heading" class="py-24 bg-slate-50 dark:bg-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 id="proyectos-heading" class="text-3xl md:text-4xl font-black mb-4 text-slate-900 dark:text-white">Proyectos <span class="text-cynekta-blue">que hablan por nosotros</span></h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                    Cada solución que desarrollamos resuelve un problema real de negocio.
-                </p>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Cada solución que desarrollamos resuelve un problema real de negocio.</p>
             </div>
             <div class="max-w-4xl mx-auto mb-10">
                 <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
@@ -389,9 +318,7 @@
                             <p class="text-sm text-slate-500 dark:text-slate-400">Sector Logística y Comercio</p>
                         </div>
                         <div class="md:col-span-3 p-8 flex flex-col justify-center">
-                            <p class="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-                                Plataforma multi-rol con impacto regulatorio. Intranet corporativa que integra gestión de empleados, documentos y flujos de aprobación, reduciendo los tiempos operativos en más del 30%.
-                            </p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">Plataforma multi-rol con impacto regulatorio. Intranet corporativa que integra gestión de empleados, documentos y flujos de aprobación, reduciendo los tiempos operativos en más del 30%.</p>
                             <div class="flex flex-wrap gap-2 mb-4">
                                 <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Intranet Corporativa</span>
                                 <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">Gestión Documental</span>
@@ -406,45 +333,28 @@
                 <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
                     <div class="bg-gradient-to-r from-amber-500/10 to-yellow-50 dark:from-amber-500/20 dark:to-slate-800 p-5">
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="size-12 rounded-lg bg-white dark:bg-slate-700 p-1.5 shadow-sm flex items-center justify-center">
-                                <span class="material-symbols-outlined text-3xl text-amber-600">local_gas_station</span>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white">Sistema de Ventas para Grifos</h3>
-                                <p class="text-xs text-slate-500">Combustibles</p>
-                            </div>
+                            <div class="size-12 rounded-lg bg-white dark:bg-slate-700 p-1.5 shadow-sm flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-amber-600">local_gas_station</span></div>
+                            <div><h3 class="font-bold text-slate-900 dark:text-white">Sistema de Ventas para Grifos</h3><p class="text-xs text-slate-500">Combustibles</p></div>
                         </div>
-                        <p class="text-sm text-slate-600 dark:text-slate-300">
-                            Control de ventas con asociación de vehículos y personal autorizado, optimizando el despacho y la eficiencia operativa.
-                        </p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Control de ventas con asociación de vehículos y personal autorizado, optimizando el despacho y la eficiencia operativa.</p>
                     </div>
                 </div>
                 <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
                     <div class="bg-gradient-to-r from-purple-500/10 to-pink-50 dark:from-purple-500/20 dark:to-slate-800 p-5">
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="size-12 rounded-lg bg-white dark:bg-slate-700 p-1.5 shadow-sm flex items-center justify-center">
-                                <span class="material-symbols-outlined text-3xl text-purple-600">nightlife</span>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-slate-900 dark:text-white">Sistema Integral para Discoteca</h3>
-                                <p class="text-xs text-slate-500">Entretenimiento</p>
-                            </div>
+                            <div class="size-12 rounded-lg bg-white dark:bg-slate-700 p-1.5 shadow-sm flex items-center justify-center"><span class="material-symbols-outlined text-3xl text-purple-600">nightlife</span></div>
+                            <div><h3 class="font-bold text-slate-900 dark:text-white">Sistema Integral para Discoteca</h3><p class="text-xs text-slate-500">Entretenimiento</p></div>
                         </div>
-                        <p class="text-sm text-slate-600 dark:text-slate-300">
-                            Gestión completa de inventario, ventas por puesto de mozo y control de invitados VIP, todo en un solo sistema.
-                        </p>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">Gestión completa de inventario, ventas por puesto de mozo y control de invitados VIP, todo en un solo sistema.</p>
                     </div>
                 </div>
             </div>
             <div class="text-center">
                 <p class="text-slate-600 dark:text-slate-400 mb-4">Cada proyecto es un reto distinto. ¿Tienes el tuyo?</p>
-                <a href="#contacto" class="inline-flex items-center gap-2 bg-cynekta-blue hover:bg-cynekta-dark text-white px-8 py-3 rounded-lg font-bold shadow-lg transition-all">
-                    Cuéntanos tu proyecto <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
-                </a>
+                <a href="#contacto" class="inline-flex items-center gap-2 bg-cynekta-blue hover:bg-cynekta-dark text-white px-8 py-3 rounded-lg font-bold shadow-lg transition-all">Cuéntanos tu proyecto <span class="material-symbols-outlined text-[20px]">arrow_forward</span></a>
             </div>
         </div>
     </section>
-
     <section id="proceso" aria-labelledby="proceso-heading" class="py-24 bg-white dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -452,87 +362,42 @@
                 <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Sin sorpresas, con comunicación constante.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">1</div>
-                    <h3 class="font-bold mb-2">Te escuchamos</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Entendemos tus metas y dificultades. Nos reunimos contigo (virtual o presencial) sin costo.</p>
-                </div>
-                <div class="text-center">
-                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">2</div>
-                    <h3 class="font-bold mb-2">Diseñamos la solución</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Preparamos un plan detallado con tiempos, alcance y presupuesto claro. Tú decides.</p>
-                </div>
-                <div class="text-center">
-                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">3</div>
-                    <h3 class="font-bold mb-2">Desarrollamos e implementamos</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Construimos tu proyecto manteniéndote al día. Revisamos juntos cada avance.</p>
-                </div>
-                <div class="text-center">
-                    <div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">4</div>
-                    <h3 class="font-bold mb-2">Damos soporte continuo</h3>
-                    <p class="text-sm text-slate-600 dark:text-slate-400">Después del lanzamiento seguimos a tu lado. Garantía y mantenimiento disponible.</p>
-                </div>
+                <div class="text-center"><div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">1</div><h3 class="font-bold mb-2">Te escuchamos</h3><p class="text-sm text-slate-600 dark:text-slate-400">Entendemos tus metas y dificultades. Nos reunimos contigo (virtual o presencial) sin costo.</p></div>
+                <div class="text-center"><div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">2</div><h3 class="font-bold mb-2">Diseñamos la solución</h3><p class="text-sm text-slate-600 dark:text-slate-400">Preparamos un plan detallado con tiempos, alcance y presupuesto claro. Tú decides.</p></div>
+                <div class="text-center"><div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">3</div><h3 class="font-bold mb-2">Desarrollamos e implementamos</h3><p class="text-sm text-slate-600 dark:text-slate-400">Construimos tu proyecto manteniéndote al día. Revisamos juntos cada avance.</p></div>
+                <div class="text-center"><div class="size-14 rounded-full bg-cynekta-blue text-white flex items-center justify-center mx-auto mb-4 font-black text-xl shadow-lg">4</div><h3 class="font-bold mb-2">Damos soporte continuo</h3><p class="text-sm text-slate-600 dark:text-slate-400">Después del lanzamiento seguimos a tu lado. Garantía y mantenimiento disponible.</p></div>
             </div>
         </div>
     </section>
-
     <section id="nosotros" aria-labelledby="nosotros-heading" class="py-24 bg-slate-50 dark:bg-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
             <div class="lg:w-1/2 flex justify-center">
                 <div class="grid grid-cols-2 gap-4 w-fit">
-                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-cynekta-blue to-cyan-500 flex items-center justify-center text-white shadow-lg">
-                        <i class="bi bi-pc-display-horizontal text-2xl sm:text-3xl lg:text-4xl"></i>
-                    </div>
-                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg">
-                        <i class="bi bi-diagram-3-fill text-2xl sm:text-3xl lg:text-4xl"></i>
-                    </div>
-                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-white shadow-lg">
-                        <i class="bi bi-headset text-2xl sm:text-3xl lg:text-4xl"></i>
-                    </div>
-                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white shadow-lg">
-                        <i class="bi bi-shield-lock-fill text-2xl sm:text-3xl lg:text-4xl"></i>
-                    </div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-cynekta-blue to-cyan-500 flex items-center justify-center text-white shadow-lg"><i class="bi bi-pc-display-horizontal text-2xl sm:text-3xl lg:text-4xl"></i></div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg"><i class="bi bi-diagram-3-fill text-2xl sm:text-3xl lg:text-4xl"></i></div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center text-white shadow-lg"><i class="bi bi-headset text-2xl sm:text-3xl lg:text-4xl"></i></div>
+                    <div class="w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white shadow-lg"><i class="bi bi-shield-lock-fill text-2xl sm:text-3xl lg:text-4xl"></i></div>
                 </div>
             </div>
             <div class="lg:w-1/2">
                 <h2 id="nosotros-heading" class="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white">Somos <span class="text-cynekta-blue">CYNEKTA</span>, un equipo comprometido</h2>
-                <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                    Somos un grupo de profesionales de la tecnología que trabajamos de forma cercana, dedicados a que tu empresa tenga las herramientas digitales que realmente necesita.
-                </p>
-                <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">
-                    Hemos desarrollado sistemas a medida para sectores tan distintos como logística, estaciones de servicio y entretenimiento. Cada proyecto es liderado por un desarrollador senior que te explica todo sin tecnicismos, para que tomes decisiones informadas. Nos apasiona la seguridad, la velocidad y la atención al detalle.
-                </p>
-                <div class="flex gap-4 mt-6">
-                    <a href="#contacto" class="bg-cynekta-blue hover:bg-cynekta-dark text-white px-6 py-3 rounded-lg font-bold transition">Trabaja con nosotros</a>
-                </div>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Somos un grupo de profesionales de la tecnología que trabajamos de forma cercana, dedicados a que tu empresa tenga las herramientas digitales que realmente necesita.</p>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Hemos desarrollado sistemas a medida para sectores tan distintos como logística, estaciones de servicio y entretenimiento. Cada proyecto es liderado por un desarrollador senior que te explica todo sin tecnicismos, para que tomes decisiones informadas. Nos apasiona la seguridad, la velocidad y la atención al detalle.</p>
+                <div class="flex gap-4 mt-6"><a href="#contacto" class="bg-cynekta-blue hover:bg-cynekta-dark text-white px-6 py-3 rounded-lg font-bold transition">Trabaja con nosotros</a></div>
             </div>
         </div>
     </section>
-
     <section aria-labelledby="faq-heading" class="py-24 bg-white dark:bg-slate-900">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="faq-heading" class="text-3xl md:text-4xl font-black mb-12 text-center text-slate-900 dark:text-white">Preguntas <span class="text-cynekta-blue">frecuentes</span></h2>
             <div class="space-y-6">
-                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
-                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Cuánto tardan en entregar un proyecto? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
-                    <p class="mt-4 text-slate-600 dark:text-slate-400">Depende del alcance. Una página web simple puede estar lista en 5 días hábiles. Proyectos más complejos como intranets o sistemas a medida pueden tomar de 3 a 8 semanas. Siempre definimos fechas claras en la propuesta inicial.</p>
-                </details>
-                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
-                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Cómo funcionan los pagos y el mantenimiento mensual? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
-                    <p class="mt-4 text-slate-600 dark:text-slate-400">Realizas un único pago por el desarrollo y luego, si lo deseas, una pequeña cuota mensual que cubre hosting, seguridad, soporte y actualizaciones. Así mantenemos tu proyecto al día sin que tengas que preocuparte.</p>
-                </details>
-                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
-                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Qué incluye el soporte mensual? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
-                    <p class="mt-4 text-slate-600 dark:text-slate-400">Incluye copias de seguridad periódicas, actualización de plugins/seguridad, monitoreo de disponibilidad y asistencia técnica por correo o WhatsApp en horario hábil. También aplican descuentos para nuevas funcionalidades.</p>
-                </details>
-                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group">
-                    <summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">No sé nada de tecnología, ¿es un problema? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary>
-                    <p class="mt-4 text-slate-600 dark:text-slate-400">¡Para nada! Justamente nuestro trabajo es traducir lo técnico a soluciones que tú entiendas. Te guiaremos en cada paso para que tomes las mejores decisiones sin estrés.</p>
-                </details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group"><summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Cuánto tardan en entregar un proyecto? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary><p class="mt-4 text-slate-600 dark:text-slate-400">Depende del alcance. Una página web simple puede estar lista en 5 días hábiles. Proyectos más complejos como intranets o sistemas a medida pueden tomar de 3 a 8 semanas. Siempre definimos fechas claras en la propuesta inicial.</p></details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group"><summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Cómo funcionan los pagos y el mantenimiento mensual? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary><p class="mt-4 text-slate-600 dark:text-slate-400">Realizas un único pago por el desarrollo y luego, si lo deseas, una pequeña cuota mensual que cubre hosting, seguridad, soporte y actualizaciones. Así mantenemos tu proyecto al día sin que tengas que preocuparte.</p></details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group"><summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">¿Qué incluye el soporte mensual? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary><p class="mt-4 text-slate-600 dark:text-slate-400">Incluye copias de seguridad periódicas, actualización de plugins/seguridad, monitoreo de disponibilidad y asistencia técnica por correo o WhatsApp en horario hábil. También aplican descuentos para nuevas funcionalidades.</p></details>
+                <details class="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 group"><summary class="font-bold text-lg cursor-pointer list-none flex justify-between items-center">No sé nada de tecnología, ¿es un problema? <span class="material-symbols-outlined group-open:rotate-180 transition">expand_more</span></summary><p class="mt-4 text-slate-600 dark:text-slate-400">¡Para nada! Justamente nuestro trabajo es traducir lo técnico a soluciones que tú entiendas. Te guiaremos en cada paso para que tomes las mejores decisiones sin estrés.</p></details>
             </div>
         </div>
     </section>
-
     <section id="contacto" aria-labelledby="contacto-heading" class="py-24 bg-slate-50 dark:bg-slate-800">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -543,93 +408,31 @@
                 <input type="hidden" name="form-name" value="contacto" />
                 <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label for="nombre" class="block text-sm font-bold mb-2">Nombre *</label>
-                        <input id="nombre" name="nombre" type="text" required maxlength="50" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="Tu nombre completo" oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]/g, '')">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-bold mb-2">Email *</label>
-                        <input id="email" name="email" type="email" required class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="tu@empresa.com" oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._\-+]/g, '')">
-                    </div>
+                    <div><label for="nombre" class="block text-sm font-bold mb-2">Nombre *</label><input id="nombre" name="nombre" type="text" required maxlength="50" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="Tu nombre completo" oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]/g, '')"></div>
+                    <div><label for="email" class="block text-sm font-bold mb-2">Email *</label><input id="email" name="email" type="email" required class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="tu@empresa.com" oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._\-+]/g, '')"></div>
                 </div>
-                <div>
-                    <label for="servicio" class="block text-sm font-bold mb-2">¿Qué servicio te interesa?</label>
-                    <select id="servicio" name="servicio" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue">
-                        <option value="" selected disabled>Selecciona una opción</option>
-                        <option value="landing">Página Web / Landing</option>
-                        <option value="intranet">Intranet Corporativa</option>
-                        <option value="sistema">Sistema a medida</option>
-                        <option value="hosting">Hosting y Dominio</option>
-                        <option value="correo">Correo Profesional</option>
-                        <option value="soporte">Soporte Técnico</option>
-                        <option value="otro">Otro / No estoy seguro</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="mensaje" class="block text-sm font-bold mb-2">Cuéntanos más *</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required maxlength="300" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue resize-none" placeholder="Descríbenos tu proyecto o necesidad..."></textarea>
-                </div>
-                <button type="submit" class="w-full bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white font-bold py-4 rounded-lg text-lg shadow-xl transition-all flex items-center justify-center gap-2">
-                    Enviar solicitud <span class="material-symbols-outlined">send</span>
-                </button>
+                <div><label for="servicio" class="block text-sm font-bold mb-2">¿Qué servicio te interesa?</label><select id="servicio" name="servicio" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue"><option value="" selected disabled>Selecciona una opción</option><option value="landing">Página Web / Landing</option><option value="intranet">Intranet Corporativa</option><option value="sistema">Sistema a medida</option><option value="hosting">Hosting y Dominio</option><option value="correo">Correo Profesional</option><option value="soporte">Soporte Técnico</option><option value="otro">Otro / No estoy seguro</option></select></div>
+                <div><label for="mensaje" class="block text-sm font-bold mb-2">Cuéntanos más *</label><textarea id="mensaje" name="mensaje" rows="4" required maxlength="300" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue resize-none" placeholder="Descríbenos tu proyecto o necesidad..."></textarea></div>
+                <button type="submit" class="w-full bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white font-bold py-4 rounded-lg text-lg shadow-xl transition-all flex items-center justify-center gap-2">Enviar solicitud <span class="material-symbols-outlined">send</span></button>
             </form>
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
-                    <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">mail</span>
-                    <h3 class="font-bold">Email</h3>
-                    <p class="text-slate-600 dark:text-slate-400">cynekta@gmail.com</p>
-                </div>
-                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
-                    <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">phone</span>
-                    <h3 class="font-bold">WhatsApp</h3>
-                    <p class="text-slate-600 dark:text-slate-400">+51 992 719 812</p>
-                </div>
-                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
-                    <span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">schedule</span>
-                    <h3 class="font-bold">Horario</h3>
-                    <p class="text-slate-600 dark:text-slate-400">Lun-Vie 8am-6pm (GMT-5)</p>
-                </div>
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700"><span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">mail</span><h3 class="font-bold">Email</h3><p class="text-slate-600 dark:text-slate-400">cynekta@gmail.com</p></div>
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700"><span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">phone</span><h3 class="font-bold">WhatsApp</h3><p class="text-slate-600 dark:text-slate-400">+51 992 719 812</p></div>
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700"><span class="material-symbols-outlined text-cynekta-blue text-3xl mb-2">schedule</span><h3 class="font-bold">Horario</h3><p class="text-slate-600 dark:text-slate-400">Lun-Vie 8am-6pm (GMT-5)</p></div>
             </div>
         </div>
     </section>
 </main>
-
 <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
-            <div class="flex items-center gap-3 mb-4">
-                <img src="/img/logo_cynekta.webp" alt="CYNEKTA" class="w-10 h-10" loading="lazy">
-                <span class="text-xl font-black text-white">CYNEKTA</span>
-            </div>
-            <p class="text-sm">Soluciones digitales para empresas. Desarrollo web, intranets, hosting, correo profesional y soporte técnico.</p>
-        </div>
-        <div>
-            <h4 class="font-bold text-white mb-4 uppercase text-sm">Enlaces</h4>
-            <ul class="space-y-2 text-sm">
-                <li><a href="#servicios" class="hover:text-cynekta-blue transition">Servicios</a></li>
-                <li><a href="#proyectos" class="hover:text-cynekta-blue transition">Proyectos</a></li>
-                <li><a href="#nosotros" class="hover:text-cynekta-blue transition">Nosotros</a></li>
-                <li><a href="#contacto" class="hover:text-cynekta-blue transition">Contacto</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-bold text-white mb-4 uppercase text-sm">Legal</h4>
-            <ul class="space-y-2 text-sm">
-                <li><a href="#" class="hover:text-cynekta-blue transition">Política de Privacidad</a></li>
-                <li><a href="#" class="hover:text-cynekta-blue transition">Términos de Servicio</a></li>
-            </ul>
-        </div>
+        <div><div class="flex items-center gap-3 mb-4"><img src="/img/logo_cynekta.webp" alt="CYNEKTA" class="w-10 h-10" loading="lazy"><span class="text-xl font-black text-white">CYNEKTA</span></div><p class="text-sm">Soluciones digitales para empresas. Desarrollo web, intranets, hosting, correo profesional y soporte técnico.</p></div>
+        <div><h4 class="font-bold text-white mb-4 uppercase text-sm">Enlaces</h4><ul class="space-y-2 text-sm"><li><a href="#servicios" class="hover:text-cynekta-blue transition">Servicios</a></li><li><a href="#proyectos" class="hover:text-cynekta-blue transition">Proyectos</a></li><li><a href="#nosotros" class="hover:text-cynekta-blue transition">Nosotros</a></li><li><a href="#contacto" class="hover:text-cynekta-blue transition">Contacto</a></li></ul></div>
+        <div><h4 class="font-bold text-white mb-4 uppercase text-sm">Legal</h4><ul class="space-y-2 text-sm"><li><a href="#" class="hover:text-cynekta-blue transition">Política de Privacidad</a></li><li><a href="#" class="hover:text-cynekta-blue transition">Términos de Servicio</a></li></ul></div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
-        © 2026 CYNEKTA Soluciones Tecnológicas. Todos los derechos reservados.
-    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">© 2026 CYNEKTA Soluciones Tecnológicas. Todos los derechos reservados.</div>
 </footer>
-
-<a href="https://wa.me/51992719812?text=Hola%20CYNEKTA%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="whatsapp-bubble" aria-label="Chatear en WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-</a>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<a href="https://wa.me/51992719812?text=Hola%20CYNEKTA%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="whatsapp-bubble" aria-label="Chatear en WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<script src="asset/js/sweetalert2@11.js"></script>
 <script>
     function isValidName(name) {
         const trimmed = name.trim();
@@ -637,20 +440,16 @@
         const nameRegex = /^[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]+$/;
         return nameRegex.test(trimmed);
     }
-
     function isValidEmail(email) {
         email = email.trim();
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return emailRegex.test(email);
     }
-
     function handleSubmit(event) {
         event.preventDefault();
-        
         const nombre = document.getElementById('nombre').value.trim();
         const email = document.getElementById('email').value.trim();
         const mensaje = document.getElementById('mensaje').value.trim();
-        
         if (!isValidName(nombre)) {
             Swal.fire('Error de validación', 'El nombre solo puede contener letras y espacios (sin números ni símbolos).', 'error');
             return false;
@@ -659,12 +458,10 @@
             Swal.fire('Error de validación', 'El nombre no puede exceder los 50 caracteres.', 'error');
             return false;
         }
-        
         if (!isValidEmail(email)) {
             Swal.fire('Error de validación', 'Por favor ingresa un correo electrónico válido (ejemplo: nombre@dominio.com).', 'error');
             return false;
         }
-        
         if (mensaje.length === 0) {
             Swal.fire('Error de validación', 'Por favor cuéntanos más sobre tu consulta.', 'error');
             return false;
@@ -673,10 +470,8 @@
             Swal.fire('Error de validación', 'El mensaje no puede exceder los 300 caracteres.', 'error');
             return false;
         }
-        
         const form = event.target;
         const formData = new FormData(form);
-        
         fetch('/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -697,10 +492,8 @@
         .catch(() => {
             Swal.fire('Error', 'No se pudo enviar. Intenta de nuevo.', 'error');
         });
-        
         return false;
     }
-    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
