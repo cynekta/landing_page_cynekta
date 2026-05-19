@@ -25,13 +25,20 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/img/logo_cynekta.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet">
     <link href="asset/css/tailwind.min.css" rel="stylesheet">
-    <link href="asset/css/inter.css" rel="stylesheet">
-    <link href="asset/css/material-symbols-outlined.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/css/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="asset/css/sweetalert2.min.css">
+    <link href="asset/css/inter.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="asset/css/material-symbols-outlined.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="asset/css/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="asset/css/sweetalert2.min.css" media="print" onload="this.media='all'">
+    <script src="asset/js/sweetalert2@11.js" defer></script>
+    <link rel="preload" href="asset/css/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        input, select, textarea { border-width: 1px; }
         .gradient-text {
             background: linear-gradient(90deg, #2563eb, #3b82f6, #60a5fa);
             background-size: 200% auto;
@@ -65,6 +72,18 @@
         }
         .whatsapp-bubble:hover { transform: scale(1.1); }
         .whatsapp-bubble i { font-size: 32px; color: white; }
+        a.text-cynekta-blue {
+            color: #2563eb;
+        }
+        .bg-cynekta-blue {
+            background-color: #2563eb;
+        }
+        footer p, footer .text-slate-400 {
+            color: #cbd5e1;
+        }
+        .text-cynekta-blue {
+            color: #1d4ed8;
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -199,7 +218,7 @@
                     <div class="aspect-video rounded-lg mb-4 overflow-hidden">
                         <img src="/img/desarrollo-web-empresas.webp" alt="Desarrollo web profesional para empresas - CYNEKTA" class="w-full h-full object-cover" loading="lazy">
                     </div>
-                    <h3 class="font-bold text-lg mb-1">Tu presencia digital profesional</h3>
+                    <p class="font-bold text-lg mb-1">Tu presencia digital profesional</p>
                     <p class="text-sm text-slate-500">Sitios web, sistemas internos y correo corporativo, todo en un solo lugar.</p>
                 </div>
             </div>
@@ -313,7 +332,7 @@
                 <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 overflow-hidden project-card">
                     <div class="grid md:grid-cols-5">
                         <div class="md:col-span-2 bg-gradient-to-br from-cynekta-blue/5 to-blue-100 dark:from-cynekta-blue/20 dark:to-slate-800 p-8 flex flex-col items-center justify-center text-center">
-                            <img src="/img/logo-abc.png" alt="Logo de ABC Importaciones y Servicios, cliente de CYNEKTA" class="w-32 h-auto mb-4 bg-white p-2 rounded-xl shadow-sm" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2260%22%3E%3Crect width=%22120%22 height=%2260%22 fill=%22%23f1f5f9%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23475569%22 font-size=%2214%22%3EABC%3C/text%3E%3C/svg%3E';">
+                            <img src="/img/logo-abc.png" alt="Logo de ABC Importaciones y Servicios, cliente de CYNEKTA" class="w-32 h-auto mb-4 bg-white p-2 rounded-xl shadow-sm" width="120" height="60" loading="lazy" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%2260%22%3E%3Crect width=%22120%22 height=%2260%22 fill=%22%23f1f5f9%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23475569%22 font-size=%2214%22%3EABC%3C/text%3E%3C/svg%3E';">
                             <h3 class="font-bold text-xl text-slate-900 dark:text-white">ABC Importaciones y Servicios</h3>
                             <p class="text-sm text-slate-500 dark:text-slate-400">Sector Logística y Comercio</p>
                         </div>
@@ -408,11 +427,11 @@
                 <input type="hidden" name="form-name" value="contacto" />
                 <p class="hidden"><label>No llenar: <input name="bot-field" /></label></p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div><label for="nombre" class="block text-sm font-bold mb-2">Nombre *</label><input id="nombre" name="nombre" type="text" required maxlength="50" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="Tu nombre completo" oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]/g, '')"></div>
-                    <div><label for="email" class="block text-sm font-bold mb-2">Email *</label><input id="email" name="email" type="email" required class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="tu@empresa.com" oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._\-+]/g, '')"></div>
+                    <div><label for="nombre" class="block text-sm font-bold mb-2">Nombre *</label><input id="nombre" name="nombre" type="text" required maxlength="50" class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="Tu nombre completo" oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúüñÁÉÍÓÚÜÑ\s]/g, '')"></div>
+                    <div><label for="email" class="block text-sm font-bold mb-2">Email *</label><input id="email" name="email" type="email" required class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue" placeholder="tu@empresa.com" oninput="this.value = this.value.replace(/[^a-zA-Z0-9@._\-+]/g, '')"></div>
                 </div>
-                <div><label for="servicio" class="block text-sm font-bold mb-2">¿Qué servicio te interesa?</label><select id="servicio" name="servicio" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue"><option value="" selected disabled>Selecciona una opción</option><option value="landing">Página Web / Landing</option><option value="intranet">Intranet Corporativa</option><option value="sistema">Sistema a medida</option><option value="hosting">Hosting y Dominio</option><option value="correo">Correo Profesional</option><option value="soporte">Soporte Técnico</option><option value="otro">Otro / No estoy seguro</option></select></div>
-                <div><label for="mensaje" class="block text-sm font-bold mb-2">Cuéntanos más *</label><textarea id="mensaje" name="mensaje" rows="4" required maxlength="300" class="w-full rounded-lg border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue resize-none" placeholder="Descríbenos tu proyecto o necesidad..."></textarea></div>
+                <div><label for="servicio" class="block text-sm font-bold mb-2">¿Qué servicio te interesa?</label><select id="servicio" name="servicio" class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue"><option value="" selected disabled>Selecciona una opción</option><option value="landing">Página Web / Landing</option><option value="intranet">Intranet Corporativa</option><option value="sistema">Sistema a medida</option><option value="hosting">Hosting y Dominio</option><option value="correo">Correo Profesional</option><option value="soporte">Soporte Técnico</option><option value="otro">Otro / No estoy seguro</option></select></div>
+                <div><label for="mensaje" class="block text-sm font-bold mb-2">Cuéntanos más *</label><textarea id="mensaje" name="mensaje" rows="4" required maxlength="300" class="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 py-3 focus:border-cynekta-blue focus:ring-cynekta-blue resize-none" placeholder="Descríbenos tu proyecto o necesidad..."></textarea></div>
                 <button type="submit" class="w-full bg-gradient-to-r from-cynekta-blue to-cynekta-dark hover:from-cynekta-dark hover:to-cynekta-blue text-white font-bold py-4 rounded-lg text-lg shadow-xl transition-all flex items-center justify-center gap-2">Enviar solicitud <span class="material-symbols-outlined">send</span></button>
             </form>
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -432,7 +451,7 @@
     <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">© 2026 CYNEKTA Soluciones Tecnológicas. Todos los derechos reservados.</div>
 </footer>
 <a href="https://wa.me/51992719812?text=Hola%20CYNEKTA%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener" class="whatsapp-bubble" aria-label="Chatear en WhatsApp"><i class="bi bi-whatsapp"></i></a>
-<script src="asset/js/sweetalert2@11.js"></script>
+<script src="asset/js/sweetalert2@11.js" defer></script>
 <script>
     function isValidName(name) {
         const trimmed = name.trim();
